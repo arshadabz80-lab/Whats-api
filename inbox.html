@@ -1,1 +1,51 @@
-<h1>Chat Inbox</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chat Inbox</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fa;}
+.container{display:flex;height:100vh;}
+.left{width:22%;background:#fff;border-right:1px solid #ddd;padding:15px;overflow-y:auto;}
+.chat{padding:12px;margin-bottom:10px;background:#f2f4f8;border-radius:8px;cursor:pointer;}
+.chat:hover{background:#e6ebf3;}
+.center{width:50%;display:flex;flex-direction:column;background:#fafbff;}
+.header{padding:15px;background:#fff;border-bottom:1px solid #ddd;font-size:18px;font-weight:bold;}
+.messages{padding:20px;flex:1;overflow-y:auto;}
+.msg{max-width:60%;padding:10px;margin-bottom:10px;border-radius:10px;}
+.in{background:#fff;border:1px solid #ccc;}
+.out{background:#d6e7ff;margin-left:auto;}
+.inputbar{padding:15px;background:#fff;border-top:1px solid #ddd;display:flex;gap:10px;}
+.inputbar input{flex:1;padding:10px;border-radius:8px;border:1px solid #ccc;}
+.inputbar button{padding:10px 20px;background:#2d7df4;color:#fff;border:none;border-radius:8px;}
+.right{width:28%;background:#fff;border-left:1px solid #ddd;padding:20px;overflow-y:auto;}
+.box{background:#f2f6ff;padding:15px;border-radius:10px;margin-bottom:10px;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left">
+<h2>Chats</h2>
+<div class="chat"><strong>John Doe</strong><br><small>Hello! Need package...</small></div>
+<div class="chat"><strong>Sara Wilson</strong><br><small>I need Europe tour...</small></div>
+</div>
+<div class="center">
+<div class="header">John Doe</div>
+<div class="messages">
+<div class="msg in">Hi! I need Europe package details.</div>
+<div class="msg out">Sure! May I know your dates?</div>
+</div>
+<div class="inputbar">
+<input type="text" placeholder="Type message...">
+<button>Send</button>
+</div>
+</div>
+<div class="right">
+<h3>Lead Info</h3>
+<div class="box"><strong>John Doe</strong><br>+1 234 567 890</div>
+<div class="box"><strong>Stage:</strong> Hot Lead</div>
+<div class="box"><strong>Notes:</strong><br>Interested in Europe package.</div>
+</div>
+</div>
+</body>
+</html>

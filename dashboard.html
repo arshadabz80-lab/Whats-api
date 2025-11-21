@@ -1,1 +1,25 @@
-<h1>Dashboard</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fa;}
+.nav{background:#fff;padding:15px;font-size:20px;font-weight:bold;box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:20px;}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+.chart{height:200px;background:#e6edff;border-radius:8px;margin-top:10px;}
+</style>
+</head>
+<body>
+<div class="nav">Holidayys CRM Dashboard</div>
+<div class="grid">
+<div class="card"><h3>New Leads</h3><h1>125</h1></div>
+<div class="card"><h3>Hot Leads</h3><h1>12</h1></div>
+<div class="card"><h3>Won Leads</h3><h1>7</h1></div>
+<div class="card"><h3>Conversion</h3><h1>21%</h1></div>
+<div class="card" style="grid-column:span 2;"><h3>Leads by Stage</h3><div class="chart"></div></div>
+<div class="card"><h3>Lead Sources</h3><div class="chart"></div></div>
+<div class="card"><h3>Agent Performance</h3><p>Ayesha – 10</p><p>Bilal – 7</p></div>
+</div>
+</body>
+</html>
